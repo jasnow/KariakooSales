@@ -3,4 +3,7 @@ Kariakoo - helping rural farmers make accurate pricing desisions
 ----------------------------------------------------------------------
 **DEVELOPER INSTRUCTIONS**
 
-Use "rvm --default use ruby-1.9.2-p290" to build app.
+ 1. Use "rvm --default use ruby-1.9.2-p290" to build app.
+ 2. Use "rake db:seed" to use the seeded test data. 
+ 3. FYI: Yes, we have 5 "render" errors and LOTS of
+    validation errors in current build.
