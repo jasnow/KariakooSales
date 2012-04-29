@@ -1,0 +1,23 @@
+require 'spec_helper'
+
+describe "locations/show" do
+  before(:each) do
+    @location = assign(:location, stub_model(Location,
+      :name => "Name",
+      :town => "Town",
+      :ward => "Ward",
+      :district => "District",
+      :region => "Region"
+    ))
+  end
+
+  it "renders attributes in <p>" do
+    render
+    # Run the generator again with the --webrat flag if you want to use webrat matchers
+    rendered.should match(/Name/)
+    rendered.should match(/Town/)
+    rendered.should match(/Ward/)
+    rendered.should match(/District/)
+    rendered.should match(/Region/)
+  end
+end

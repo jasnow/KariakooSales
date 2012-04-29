@@ -1,0 +1,35 @@
+<%- model_class = @location.class -%>
+<h1><%=t '.title', :default => model_class.model_name.human %></h1>
+
+<p>
+  <strong><%= model_class.human_attribute_name(:name) %>:</strong><br>
+  <%= @location.name %>
+</p>
+<p>
+  <strong><%= model_class.human_attribute_name(:town) %>:</strong><br>
+  <%= @location.town %>
+</p>
+<p>
+  <strong><%= model_class.human_attribute_name(:ward) %>:</strong><br>
+  <%= @location.ward %>
+</p>
+<p>
+  <strong><%= model_class.human_attribute_name(:district) %>:</strong><br>
+  <%= @location.district %>
+</p>
+<p>
+  <strong><%= model_class.human_attribute_name(:region) %>:</strong><br>
+  <%= @location.region %>
+</p>
+
+<div class="form-actions">
+  <%= link_to t('.back', :default => t("helpers.links.back")),
+              locations_path, :class => 'btn'  %>
+  <%= link_to t('.edit', :default => t("helpers.links.edit")),
+              edit_location_path(@location), :class => 'btn' %>
+  <%= link_to t('.destroy', :default => t("helpers.links.destroy")),
+              location_path(@location),
+              :method => 'delete',
+              :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')),
+              :class => 'btn btn-danger' %>
+</div>

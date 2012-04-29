@@ -1,0 +1,21 @@
+<%= form_for(@market_type) do |f| %>
+  <% if @market_type.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@market_type.errors.count, "error") %> prohibited this market_type from being saved:</h2>
+
+      <ul>
+      <% @market_type.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :value %><br />
+    <%= f.text_field :value %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

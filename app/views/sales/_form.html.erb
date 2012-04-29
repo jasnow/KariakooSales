@@ -1,0 +1,17 @@
+<%= simple_form_for @sale, :html => { :class => 'form-horizontal' } do |f| %>
+  <%= f.input :farmer_name %>
+  <%= f.input :sale_date %>
+  <%= f.input :market_type %>
+  <%= f.input :location %>
+  <%= f.input :volume %>
+  <%= f.input :unit %>
+  <%= f.input :quality %>
+  <%= f.input :commodity %>
+  <%= f.input :price_received %>
+  <%= f.input :price_receiptUnit %>
+  <div class="form-actions">
+    <%= f.button :submit, :class => 'btn-primary' %>
+    <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                sales_path, :class => 'btn' %>
+  </div>
+<% end %>

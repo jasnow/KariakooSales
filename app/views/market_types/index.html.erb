@@ -1,0 +1,23 @@
+<h1>Listing market_types</h1>
+
+<table>
+  <tr>
+    <th>Value</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @market_types.each do |market_type| %>
+  <tr>
+    <td><%= market_type.value %></td>
+    <td><%= link_to 'Show', market_type %></td>
+    <td><%= link_to 'Edit', edit_market_type_path(market_type) %></td>
+    <td><%= link_to 'Destroy', market_type, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Market type', new_market_type_path %>

@@ -1,0 +1,6 @@
+Kariakoo - helping rural farmers make accurate pricing desisions
+
+----------------------------------------------------------------------
+**DEVELOPER INSTRUCTIONS**
+
+Use "rvm --default use ruby-1.9.2-p290" to build app.

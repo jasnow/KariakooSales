@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>KariakooSales</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <div class="topbar">
+    <div class="topbar-inner">
+        <div class="container">
+          <h3><a href="#">Kariakoo Sales - The database you were waiting for!</a></h3>
+	  <br/>
+          <ul class="nav">
+	    <%= link_to 'Market Types', market_types_path %>&nbsp;|&nbsp;
+	    <%= link_to 'Locations', locations_path %>&nbsp;|&nbsp;
+	    <%= link_to 'Commodities', commodities_path %>&nbsp;|&nbsp;
+	    <%= link_to 'Units', units_path %>&nbsp;|&nbsp;
+	    <%= link_to 'Qualities', qualities_path %>&nbsp;|&nbsp;
+	    <%= link_to 'Price Receipt Units', price_receipt_units_path %>
+          </ul>
+        </div>
+    </div>
+  </div>
+  <div id="main-content">
+  <%= yield %>
+  </div>
+</body>
+</html>
