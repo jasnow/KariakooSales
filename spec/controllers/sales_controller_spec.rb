@@ -24,7 +24,17 @@ describe SalesController do
   # Sale. As you add validations to Sale, be sure to
   # update the return value of this method accordingly.
   def valid_attributes
-    {}
+    { :sale_date => Date.new(2012,02,03),
+      :farmer_name => "Joe",
+      :market_type => "Wholesale",
+      :location => "Roswell",
+      :volume => 10,
+      :unit => "Bushels",
+      :quality => "High",
+      :commodity => "Wheat",
+      :price_received => 1,
+      :price_receiptUnit => "dollars"
+    }
   end
   
   # This should return the minimal set of values that should be in the session

@@ -24,7 +24,7 @@ describe CommoditiesController do
   # Commodity. As you add validations to Commodity, be sure to
   # update the return value of this method accordingly.
   def valid_attributes
-    {}
+    { :value => "Wheat" }
   end
   
   # This should return the minimal set of values that should be in the session

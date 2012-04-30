@@ -4,10 +4,10 @@ describe "units/index" do
   before(:each) do
     assign(:units, [
       stub_model(Unit,
-        :value => "Value"
+        :value => "Cups"
       ),
       stub_model(Unit,
-        :value => "Value"
+        :value => "Cups"
       )
     ])
   end

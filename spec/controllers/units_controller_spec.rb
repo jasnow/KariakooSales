@@ -24,7 +24,7 @@ describe UnitsController do
   # Unit. As you add validations to Unit, be sure to
   # update the return value of this method accordingly.
   def valid_attributes
-    {}
+    { :value => "Cups" }
   end
   
   # This should return the minimal set of values that should be in the session

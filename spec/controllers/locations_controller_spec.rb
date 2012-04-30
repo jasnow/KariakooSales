@@ -24,7 +24,9 @@ describe LocationsController do
   # Location. As you add validations to Location, be sure to
   # update the return value of this method accordingly.
   def valid_attributes
-    {}
+    { :name => "Roswell", :town => "Roswell", :ward => "Fulton",
+      :district => "Georgia", :region => "Southeast"
+    }
   end
   
   # This should return the minimal set of values that should be in the session

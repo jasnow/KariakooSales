@@ -24,7 +24,7 @@ describe MarketTypesController do
   # MarketType. As you add validations to MarketType, be sure to
   # update the return value of this method accordingly.
   def valid_attributes
-    {}
+    { :value => "FarmGate" }
   end
   
   # This should return the minimal set of values that should be in the session
