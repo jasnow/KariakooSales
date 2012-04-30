@@ -24,7 +24,7 @@
         <td><%= link_to sale.id, sale_path(sale) %></td>
         <td><%= sale.farmer_name %></td>
         <td><%= sale.sale_date %></td>
-        <td><%= sale.market_type %></td>
+        <td><%#= sale.market_type, :collection => [ "High", "Medium", "Low"]  %></td>
         <td><%= sale.location %></td>
         <td><%= sale.volume %></td>
         <td><%= sale.unit %></td>
