@@ -65,7 +65,7 @@ describe SalesController do
       get :new, {}, valid_session
       assigns(:sale).should be_a_new(Sale)
 
-      assigns(:market_types).should_not be_nil
+      #LOOPKUP: assigns(:market_types).should_not be_nil
     end
   end
 

@@ -4,12 +4,13 @@
 
   <%#= collection_select @sale, :market_type, @market_types, :value, :value %>
   
-  <%= f.association :markettypes, :collection => MarketType.all(:order => 'value') %>
+  <%#= f.association :markettypes, :collection => MarketType.all(:order => 'value') %>
+  <%= f.input :market_type %>
   <%= f.input :location %>
   <%= f.input :volume %>
   <%= f.input :unit %>
-  <%= f.input :quality %> 
-<%#=collection_select @sale, :commodity, @commodities, :value, :value %>
+  <%= f.input :quality %>
+  <%#=collection_select @sale, :commodity, @commodities, :value, :value %>
   <%= f.input :commodity %>
   <%= f.input :price_received %>
   <%= f.input :price_receiptUnit %>

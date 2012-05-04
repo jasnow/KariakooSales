@@ -9,9 +9,10 @@
 
 # encoding: utf-8
 
-Parent.delete_all
-Parent.create(:name => "Bill")
-Parent.create(:name => "John")
+#LOOKUP: Parent.delete_all
+#LOOKUP: Parent.create(:name => "Bill")
+#LOOKUP: Parent.create(:name => "John")
+
 Commodity.delete_all
 Commodity.create(:value => "Corn Oil")
 Commodity.create(:value => "Wheat")
