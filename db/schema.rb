@@ -11,13 +11,12 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120503161619) do
+ActiveRecord::Schema.define(:version => 20120429163951) do
 
   create_table "commodities", :force => true do |t|
     t.string   "value"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
-    t.integer  "sale_id"
   end
 
   create_table "locations", :force => true do |t|
@@ -28,28 +27,24 @@ ActiveRecord::Schema.define(:version => 20120503161619) do
     t.string   "region"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
-    t.integer  "sale_id"
   end
 
   create_table "market_types", :force => true do |t|
     t.string   "value"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
-    t.integer  "sale_id"
   end
 
   create_table "price_receipt_units", :force => true do |t|
     t.string   "value"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
-    t.integer  "sale_id"
   end
 
   create_table "qualities", :force => true do |t|
     t.string   "value"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
-    t.integer  "sale_id"
   end
 
   create_table "sales", :force => true do |t|
@@ -63,21 +58,14 @@ ActiveRecord::Schema.define(:version => 20120503161619) do
     t.string   "commodity"
     t.integer  "price_received"
     t.string   "price_receiptUnit"
-    t.datetime "created_at",            :null => false
-    t.datetime "updated_at",            :null => false
-    t.integer  "commodity_id"
-    t.integer  "location_id"
-    t.integer  "market_type_id"
-    t.integer  "price_receipt_unit_id"
-    t.integer  "quality_id"
-    t.integer  "unit_id"
+    t.datetime "created_at",        :null => false
+    t.datetime "updated_at",        :null => false
   end
 
   create_table "units", :force => true do |t|
     t.string   "value"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
-    t.integer  "sale_id"
   end
 
 end

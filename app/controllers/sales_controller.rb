@@ -25,7 +25,8 @@ class SalesController < ApplicationController
   # GET /sales/new.json
   def new
     @sale = Sale.new
-
+    @market_types = MarketType.all    
+    @commodities = Commodity.all
     respond_to do |format|
       format.html # new.html.erb
       format.json { render json: @sale }
