@@ -9,6 +9,9 @@
 
 # encoding: utf-8
 
+Parent.delete_all
+Parent.create(:name => "Bill")
+Parent.create(:name => "John")
 Commodity.delete_all
 Commodity.create(:value => "Corn Oil")
 Commodity.create(:value => "Wheat")
