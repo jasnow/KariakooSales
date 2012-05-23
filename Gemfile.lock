@@ -199,5 +199,5 @@ DEPENDENCIES
   simple_form
   sqlite3
   therubyracer
-  therubyracer-heroku (= 0.8.1.pre3)
+  therubyracer-heroku
   twitter-bootstrap-rails
