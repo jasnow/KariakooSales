@@ -52,3 +52,9 @@ end
 gem "simple_form"
 
 gem 'rails-footnotes', '>= 3.7.5.rc4', :group => :development
+
+group :production do
+  gem 'therubyracer-heroku', '0.8.1.pre3'
+  gem 'pg'
+  # pg from http://stackoverflow.com/questions/6410623/heroku-error-when-launch-rails3-1-app-missing-postgres-gem
+end
